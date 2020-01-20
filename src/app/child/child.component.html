@@ -1,0 +1,23 @@
+
+<div class="tblData" >
+  <table id="customers">
+    <tr >
+      <th>Enrollee ID</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Gender</th>
+      <th>Email</th>
+      <th>Password</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let item of parentdata; let i = index" >
+      <td>{{ i + 1}}</td>
+      <td >{{ item.fname }} </td>
+      <td >{{ item.lname }}</td>
+      <td >{{ item.gender }}</td>
+      <td >{{ item.emailAdd }}</td>
+      <td  >{{ item.password }}</td>
+      <td ><button (click)="onEdit(item)" class="btn">Edit</button></td>
+    </tr>
+  </table>
+</div>

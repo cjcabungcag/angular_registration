@@ -1,0 +1,10 @@
+app-parent {
+    text-align: center
+}
+
+body{
+    background-image: url("https://images.wallpaperscraft.com/image/cup_ocean_sand_133354_1280x720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:5%;
+}
